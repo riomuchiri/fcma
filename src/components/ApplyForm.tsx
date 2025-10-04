@@ -132,9 +132,9 @@ const ApplyForm = () => {
                 <SelectValue placeholder="Select your level" />
               </SelectTrigger>
               <SelectContent className="bg-popover">
-                <SelectItem value="aspirant">Aspirant</SelectItem>
-                <SelectItem value="new">New Creator</SelectItem>
-                <SelectItem value="veteran">Veteran Creator</SelectItem>
+                <SelectItem value="starter">Starter Creator</SelectItem>
+                <SelectItem value="active">Active Creator</SelectItem>
+                <SelectItem value="elite">Elite Creator</SelectItem>
               </SelectContent>
             </Select>
             {errors.fanvueLevel && (

@@ -1,47 +1,41 @@
-import { Mail, Instagram, Twitter, MessageCircle, Send, Facebook, Disc } from "lucide-react";
+import { Mail, Instagram, Twitter, MessageCircle, Send, Facebook } from "lucide-react";
 
 const contacts = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@fcma.agency",
-    href: "mailto:hello@fcma.agency",
+    value: "fcma.agency@gmail.com",
+    href: "mailto:fcma.agency@gmail.com",
   },
   {
     icon: Instagram,
     label: "Instagram",
-    value: "@fanvuecreators",
-    href: "https://instagram.com/fanvuecreators",
+    value: "@fcma_agency",
+    href: "https://www.instagram.com/fcma_agency?igsh=ejJqaG1mZHltbmNn",
   },
   {
     icon: Twitter,
     label: "X (Twitter)",
-    value: "@Fanvuecreators",
-    href: "https://twitter.com/Fanvuecreators",
+    value: "@fcma_agency",
+    href: "https://x.com/fcma_agency?t=09Sue6J9Ou8TdEVdnvWxgA&s=09",
   },
   {
     icon: MessageCircle,
     label: "Threads",
-    value: "@fanvuecreators",
-    href: "https://threads.net/@fanvuecreators",
+    value: "@fcma_agency",
+    href: "https://www.threads.com/@fcma_agency",
   },
   {
     icon: Send,
     label: "Telegram",
     value: "Join Our Channel",
-    href: "https://t.me/fanvuecreators",
+    href: "https://t.me/fcmaofficial",
   },
   {
     icon: Facebook,
     label: "Facebook",
     value: "FCMA Official Page",
-    href: "https://facebook.com/fanvuecreators",
-  },
-  {
-    icon: Disc,
-    label: "Discord",
-    value: "Join Our Server",
-    href: "https://discord.gg/fanvuecreators",
+    href: "https://www.facebook.com/share/1B4j2GBnCV/",
   },
 ];
 
