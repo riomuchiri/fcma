@@ -39,14 +39,41 @@ const ApplyForm = () => {
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = (data: FormData) => {
-    console.log("Form submitted:", data);
-    setSubmitted(true);
+  const onSubmit = async (data: FormData) => {
+  try {
+  const response = await fetch("https://formspree.io/f/mgvnzabr", {
+  method: "POST",
+  headers: {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    first_name: data.firstName,
+    last_name: data.lastName,
+    email: data.email,
+    fanvue_level: data.fanvueLevel,
+    contact_option: data.contactOption,
+    contact_handle: data.contactHandle,
+  }),
+});
+
+    if (response.ok) {
+      setSubmitted(true);
+      toast({
+        title: "Application Submitted!",
+        description: "Thanks for applying! Our team will reach out soon.",
+      });
+    } else {
+      throw new Error("Submission failed");
+    }
+  } catch (error) {
     toast({
-      title: "Application Submitted!",
-      description: "Thanks for applying! Our team will reach out soon.",
+      title: "Something went wrong.",
+      description: "Please try again later or email management@fcma.agency.",
+      variant: "destructive",
     });
-  };
+  }
+};
 
   if (submitted) {
     return (

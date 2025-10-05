@@ -4,8 +4,8 @@ const contacts = [
   {
     icon: Mail,
     label: "Email",
-    value: "fcma.agency@gmail.com",
-    href: "mailto:fcma.agency@gmail.com",
+    value: "management@fcma.agency",
+    href: "mailto:management@fcma.agency",
   },
   {
     icon: Instagram,
