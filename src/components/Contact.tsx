@@ -29,7 +29,7 @@ const contacts = [
     icon: Send,
     label: "Telegram",
     value: "Join Our Channel",
-    href: "https://t.me/fcmaofficial",
+    href: "https://t.me/fcma_agency",
   },
   {
     icon: Facebook,
